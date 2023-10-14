@@ -51,7 +51,7 @@ export default function CartItem() {
   return (
     <>
       <div className="relative">
-        {console.log(cart)}
+  
         <button type="button" onClick={openModal} aria-label="Cart">
           <BagIcon extraClass="h-8 w-8 sm:h-6 sm:w-6" />
           {noOfItems > 0 && (

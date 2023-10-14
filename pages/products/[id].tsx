@@ -104,7 +104,7 @@ const Product: React.FC<Props> = () => {
     <div>
       {/* ===== Head Section ===== */}
       <Header title={`${product.name} - Haru Fashion`} />
-      {console.log(products[id - 1].img1)}
+   
       <main id="main-content">
         {/* ===== Breadcrumb Section ===== */}
         <div className="bg-lightgreen h-16 w-full flex items-center border-t-2 border-gray200">
@@ -320,7 +320,7 @@ const Product: React.FC<Props> = () => {
                   extraClass={`flex-grow text-center whitespace-nowrap`}
                   onClick={() => addItem!(currentItem)}
                 />
-                {console.log(currentItem)}
+         
                 <GhostButton onClick={handleWishlist}>
                   {alreadyWishlisted ? (
                     <HeartSolid extraClass="inline" />

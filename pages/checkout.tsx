@@ -112,7 +112,7 @@ const ShoppingCart = () => {
 
 
   const sendOrder = () => {
-    console.log(cart)
+
     let orders = ''
     let total = 0
     cart.forEach((item) => {

@@ -14,7 +14,7 @@ const addItemToCart = (
         ? (itemQty = cartItem.qty! + 1)
         : (itemQty = item.qty);
 
-      console.log(itemQty);
+     
       return cartItem.id === item.id ? { ...cartItem, qty: itemQty } : cartItem;
     });
   }

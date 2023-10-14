@@ -1,9 +1,9 @@
 import { Html, Head, Main, NextScript } from "next/document";
 
-const title = "Haru Fashion";
+const title = "Dharmik Wear";
 const desc =
-  "Haru Fashion e-commerce developed with Next.JS. Coded with 🖤 by Sat Naing (satnaing.dev).";
-const keywords = "Haru Fashion, Online Shop, E-commerce, Sat Naing, NextJS";
+  "Elevate your everyday look with the grace of Hindu gods on your chest.";
+const keywords = "Tshirt, hindu, sanaatan, dharmik, wear, fashion";
 
 export default function Document() {
   return (
@@ -40,7 +40,7 @@ export default function Document() {
 
         <meta property="og:url" content="https://haru-fashion.vercel.app" />
         <link rel="canonical" href="https://haru-fashion.vercel.app" />
-        <meta property="og:site_name" content="Haru Fashion" />
+        <meta property="og:site_name" content="Dharmik Wear" />
         <meta property="og:description" content={desc} key="og_description" />
         <meta property="og:title" content={title} key="og_title" />
         <meta
@@ -48,7 +48,7 @@ export default function Document() {
           content="https://haru-fashion.vercel.app/og.png"
         />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@satnaing.dev" />
+        <meta name="twitter:site" content="@dharmikwear" />
         <meta name="twitter:title" content={title} key="twitter_title" />
         <meta
           name="twitter:description"
