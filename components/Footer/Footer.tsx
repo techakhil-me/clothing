@@ -1,8 +1,5 @@
 import Link from "next/link";
 import { useTranslations } from "next-intl";
-
-import FacebookLogo from "../../public/icons/FacebookLogo";
-import InstagramLogo from "../../public/icons/InstagramLogo";
 import Button from "../Buttons/Button";
 import Input from "../Input/Input";
 import styles from "./Footer.module.css";
@@ -141,13 +138,13 @@ export default function Footer() {
               href="www.facebook.com"
               aria-label="Facebook Page for Haru Fashion"
             >
-              <FacebookLogo />
+              {/* <FacebookLogo /> */}
             </a>
             <a
               href="www.ig.com"
               aria-label="Instagram Account for Haru Fashion"
             >
-              <InstagramLogo />
+              {/* <InstagramLogo /> */}
             </a>
           </span>
         </div>
