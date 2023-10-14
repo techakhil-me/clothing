@@ -75,13 +75,12 @@ const Header: React.FC<Props> = ({ title }) => {
       </a>
 
       {/* ===== Top Navigation ===== */}
-      <TopNav />
+      {/* <TopNav />q */}
 
       {/* ===== Main Navigation ===== */}
       <nav
-        className={`${
-          scrolled ? "bg-white sticky top-0 shadow-md z-50" : "bg-transparent"
-        } w-full z-50 h-20 relative`}
+        className={`${scrolled ? "bg-white sticky top-0 shadow-md z-50" : "bg-transparent"
+          } w-full z-50 h-20 relative`}
       >
         <div className="app-max-width w-full">
           <div
@@ -93,27 +92,29 @@ const Header: React.FC<Props> = ({ title }) => {
             </div>
 
             {/* Left Nav */}
-            <ul className={`flex-0 lg:flex-1 flex ${styles.leftMenu}`}>
+            <ul className={`flex-0 lg:flex-1 flex -mt-4 ${styles.leftMenu}`}>
               <li>
-                <Link href={`/product-category/men`}>
-                  <a>{t("men")}</a>
+                <Link href={`/product-category/214`}>
+                  <a><img className="h-14" src="/214.png" alt="214" /></a>
                 </Link>
               </li>
               <li>
-                <Link href={`/product-category/women`}>
-                  <a>{t("women")}</a>
+              <Link href="/product-category/2414">
+                  <a><img className="h-14" src="/2414.png" alt="2414" /></a>
+                </Link>
+              </li>
+
+              <li>
+                <Link href="/product-category/diamond">
+                  <a><img className="h-14" src="/diamond.png" alt="diamond" /></a>
                 </Link>
               </li>
               <li>
-                <Link href="/product-category/bags">
-                  <a>{t("bags")}</a>
+                <Link href="/product-category/gold">
+                  <a><img className="h-14" src="/gold.png" alt="gold" /></a>
                 </Link>
               </li>
-              <li>
-                <Link href="/coming-soon">
-                  <a>{t("blogs")}</a>
-                </Link>
-              </li>
+
             </ul>
 
             {/* Haru Logo */}
@@ -123,10 +124,10 @@ const Header: React.FC<Props> = ({ title }) => {
                   <a>
                     <Image
                       className="justify-center"
-                      src="/logo.svg"
+                      src="/logo.png"
                       alt="Picture of the author"
-                      width={220}
-                      height={50}
+                      width={40}
+                      height={40}
                       layout="responsive"
                     />
                   </a>
@@ -136,14 +137,14 @@ const Header: React.FC<Props> = ({ title }) => {
 
             {/* Right Nav */}
             <ul className={`flex-1 flex justify-end ${styles.rightMenu}`}>
-              <li>
+              {/* <li>
                 <SearchForm />
               </li>
               <li>
                 <AuthForm>
                   <UserIcon />
                 </AuthForm>
-              </li>
+              </li> */}
               <li>
                 <Link href="/wishlist" passHref>
                   {/* <a className="relative" aria-label="Wishlist"> */}

@@ -96,13 +96,14 @@ const ShoppingCart = () => {
                                 width={95}
                                 height={128}
                                 className="h-32 xl:mr-4"
+                                objectFit="cover"
                               />
                             </a>
                           </Link>
                           <span>{item.name}</span>
                         </td>
                         <td className="text-right text-gray400 hidden sm:table-cell">
-                          $ {roundDecimal(item.price)}
+                          Rs {roundDecimal(item.price)}
                         </td>
                         <td>
                           <div className="w-12 h-32 sm:h-auto sm:w-3/4 md:w-2/6 mx-auto flex flex-col-reverse sm:flex-row border border-gray300 sm:divide-x-2 divide-gray300">
@@ -124,10 +125,10 @@ const ShoppingCart = () => {
                           </div>
                         </td>
                         <td className="text-right text-gray400">
-                          $ {roundDecimal(item.price * item.qty!)}
+                          Rs {roundDecimal(item.price * item.qty!)}
                           <br />
                           <span className="text-xs">
-                            ($ {roundDecimal(item.price)})
+                            (Rs {roundDecimal(item.price)})
                           </span>
                         </td>
                         <td className="text-right" style={{ minWidth: "3rem" }}>
@@ -160,7 +161,7 @@ const ShoppingCart = () => {
               <h2 className="text-xl mb-3">{t("cart_totals")}</h2>
               <div className="flex justify-between py-2">
                 <span className="uppercase">{t("subtotal")}</span>
-                <span>$ {roundDecimal(subtotal)}</span>
+                <span>Rs {roundDecimal(subtotal)}</span>
               </div>
               <div className="py-3">
                 <span className="uppercase">{t("delivery")}</span>
@@ -176,12 +177,12 @@ const ShoppingCart = () => {
                         onChange={() => setDeli("Pickup")}
                       />{" "}
                       <label htmlFor="pickup" className="cursor-pointer">
-                        {t("store_pickup")}
+                        India
                       </label>
                     </div>
                     <span>{t("free")}</span>
                   </div>
-                  <div className="flex justify-between">
+                  {/* <div className="flex justify-between">
                     <div>
                       <input
                         type="radio"
@@ -196,7 +197,7 @@ const ShoppingCart = () => {
                         {t("within_yangon")}
                       </label>
                     </div>
-                    <span>$ 2.00</span>
+                    <span>Rs 2.00</span>
                   </div>
                   <div className="flex justify-between">
                     <div>
@@ -212,13 +213,13 @@ const ShoppingCart = () => {
                         {t("other_cities")}
                       </label>
                     </div>
-                    <span>$ 7.00</span>
-                  </div>
+                    <span>Rs 7.00</span>
+                  </div> */}
                 </div>
               </div>
               <div className="flex justify-between py-3">
                 <span>{t("grand_total")}</span>
-                <span>$ {roundDecimal(subtotal + deliFee)}</span>
+                <span>Rs {roundDecimal(subtotal + deliFee)}</span>
               </div>
               <Button
                 value={t("proceed_to_checkout")}
@@ -233,7 +234,7 @@ const ShoppingCart = () => {
       </main>
 
       {/* ===== Footer Section ===== */}
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

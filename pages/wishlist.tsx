@@ -95,6 +95,7 @@ const Wishlist = () => {
                                 width={95}
                                 height={128}
                                 className="h-32 xl:mr-4"
+                                objectFit="cover"
                               />
                             </a>
                           </Link>
@@ -104,7 +105,7 @@ const Wishlist = () => {
                           {item.name}
                         </td>
                         <td className="text-right text-gray400">
-                          $ {item.price}
+                          Rs {item.price}
                         </td>
                         <td className="text-center hidden sm:table-cell max-w-xs text-gray400">
                           <Button
@@ -149,7 +150,7 @@ const Wishlist = () => {
       </main>
 
       {/* ===== Footer Section ===== */}
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

@@ -12,7 +12,7 @@ module.exports = withPWA({
     removeConsole: true,
   },
   images: {
-    domains: ["robohash.org", "res.cloudinary.com"],
+    domains: ["robohash.org", "res.cloudinary.com", "placekitten.com","drive.google.com"],
   },
   pwa: {
     dest: "public",

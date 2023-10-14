@@ -86,17 +86,19 @@ export default function Menu() {
                 className="relative opacity-95 overflow-y-auto inline-block dur h-screen w-full max-w-md overflow-hidden text-left align-middle transition-all transform bg-white shadow-xl"
               >
                 <div className="flex justify-between items-center p-6 pb-0">
-                  <Link href="/">
-                    <a>
-                      <Image
-                        className="justify-center"
-                        src="/logo.svg"
-                        alt="Picture of the author"
-                        width={85}
-                        height={22}
-                      />
-                    </a>
-                  </Link>
+                <Link href="/">
+                  <a>
+                    <Image
+                      className="justify-center"
+                      src="/logo.png"
+                      alt="Picture of the author"
+                      width={80}
+                      height={80}
+                      layout="responsive"
+                    />
+                  </a>
+                </Link>
+                
                   <button
                     type="button"
                     className="outline-none focus:outline-none text-3xl sm:text-2xl"
@@ -108,7 +110,7 @@ export default function Menu() {
 
                 <div className="mb-10">
                   <div className="itemContainer px-6 w-full flex flex-col justify-around items-center">
-                    <form
+                    {/* <form
                       className="flex w-full justify-between items-center mt-5 mb-5 border-gray300 border-b-2"
                       onSubmit={handleSubmit}
                     >
@@ -119,40 +121,40 @@ export default function Menu() {
                         className="px-4 py-2 w-full focus:outline-none text-xl"
                         onChange={handleChange}
                       />
-                    </form>
-                    <Link href="/product-category/men">
+                    </form> */}
+                    <Link href="/product-category/2414">
                       <a
                         className="w-full text-xl hover:bg-gray100 text-left py-2"
                         onClick={closeModal}
                       >
-                        {t("men")}
+                        2414
                       </a>
                     </Link>
-                    <Link href="/product-category/women">
+                    <Link href="/product-category/214">
                       <a
                         className="w-full text-xl hover:bg-gray100 text-left py-2"
                         onClick={closeModal}
                       >
-                        {t("women")}
+                       214
                       </a>
                     </Link>
-                    <Link href="/product-category/bags">
+                    <Link href="/product-category/diamond">
                       <a
                         className="w-full text-xl hover:bg-gray100 text-left py-2"
                         onClick={closeModal}
                       >
-                        {t("bags")}
+                       diamond
                       </a>
                     </Link>
-                    <Link href="/blogs">
+                    <Link href="/product-category/gold">
                       <a
                         className="w-full text-xl hover:bg-gray100 text-left py-2"
                         onClick={closeModal}
                       >
-                        {t("blogs")}
+                        gold
                       </a>
                     </Link>
-                    <Link href="/about">
+                    {/* <Link href="/about">
                       <a
                         className="w-full text-xl hover:bg-gray100 text-left py-2"
                         onClick={closeModal}
@@ -174,11 +176,11 @@ export default function Menu() {
                         <span>{auth.user ? t("profile") : t("login")}</span>
                         <UserIcon />
                       </AuthForm>
-                    </div>
+                    </div> */}
                     <hr className="border border-gray300 w-full" />
                     <Link href="/wishlist">
                       <a className="text-xl py-2 my-3 w-full flex justify-between">
-                        <span>{t("wishlist")}</span>
+                        <span>wishlist</span>
                         <div className="relative">
                           <WhistlistIcon />
                           {noOfWishlist > 0 && (
@@ -194,7 +196,7 @@ export default function Menu() {
                     <hr className="border border-gray300 w-full" />
 
                     {/* Locale Dropdown */}
-                    <HMenu
+                    {/* <HMenu
                       as="div"
                       className="relative bg-gray100 mt-4 mb-2 w-full"
                     >
@@ -237,10 +239,10 @@ export default function Menu() {
                           </Link>
                         </HMenu.Item>
                       </HMenu.Items>
-                    </HMenu>
+                    </HMenu> */}
 
                     {/* Currency Dropdown */}
-                    <HMenu as="div" className="relative bg-gray100 my-2 w-full">
+                    {/* <HMenu as="div" className="relative bg-gray100 my-2 w-full">
                       <HMenu.Button
                         as="a"
                         href="#"
@@ -281,7 +283,7 @@ export default function Menu() {
                           )}
                         </HMenu.Item>
                       </HMenu.Items>
-                    </HMenu>
+                    </HMenu> */}
 
                     <div className="flex my-10 w-2/5 space-x-6 justify-center">
                       <a

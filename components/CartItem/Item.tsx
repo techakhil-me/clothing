@@ -23,7 +23,7 @@ const Item: FC<Props> = ({
 }) => {
   return (
     <div className="item flex bg-white my-4 border-b-2 pb-4 border-gray200">
-      <Image className="w-2/12" src={img} alt={name} width={70} height={104} />
+      <Image className="w-2/12" src={img} alt={name} width={70} height={104} objectFit="cover" />
       <div className="midPart mx-4 flex-grow">
         <span>{name}</span>
         <div className="plusOrMinus w-2/6 mt-4 flex border border-gray300 divide-x-2 divide-gray300">
@@ -52,7 +52,7 @@ const Item: FC<Props> = ({
         >
           &#10005;
         </button>
-        <span>$ {roundDecimal(price)}</span>
+        <span>Rs {roundDecimal(price)}</span>
       </div>
     </div>
   );

@@ -5,7 +5,7 @@ const addItemToCart = (
   item: itemType,
   add_one = false
 ) => {
-  const duplicate = cartItems.some((cartItem) => cartItem.id === item.id);
+  const duplicate = cartItems.some((cartItem) => cartItem.id === item.id && cartItem.size===item.size && cartItem.color===item.color);
 
   if (duplicate) {
     return cartItems.map((cartItem) => {
@@ -29,6 +29,8 @@ const addItemToCart = (
       price: item.price,
       img1: item.img1,
       img2: item.img2,
+      size: item.size,
+      color: item.color,
       qty: itemQty,
     },
   ];

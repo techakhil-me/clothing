@@ -16,32 +16,32 @@ SwiperCore.use([Pagination, Navigation, Autoplay]);
 const sliders = [
   {
     id: 2,
-    image: "/bg-img/curly_hair_girl-1.jpg",
-    imageTablet: "/bg-img/curly_hair_girl-1-tablet.png",
-    imageMobile: "/bg-img/curly_hair_girl-1_mobile.jpg",
-    subtitle: "50% off",
-    titleUp: "New Cocktail",
-    titleDown: "Dresses",
+    image: "/bg-img/banner_2.png",
+    imageTablet: "/bg-img/banner_2.png",
+    imageMobile: "/bg-img/banner_mobile_2.png",
+    subtitle: "",
+    titleUp: "",
+    titleDown: "",
     rightText: false,
   },
   {
     id: 1,
-    image: "/bg-img/curly_hair_white-1.jpg",
-    imageTablet: "/bg-img/curly_hair_white-1-tablet.png",
-    imageMobile: "/bg-img/curly_hair_white-1_mobile.jpg",
-    subtitle: "Spring Revolution",
-    titleUp: "Night Summer",
-    titleDown: "Dresses",
-    rightText: true,
+    image: "/bg-img/banner_1.png",
+    imageTablet: "/bg-img/banner_1.png",
+    imageMobile: "/bg-img/banner_mobile_1.png",
+    subtitle: "",
+    titleUp: "",
+    titleDown: "",
+    rightText: false,
   },
   {
     id: 3,
-    image: "/bg-img/monigote.jpg",
-    imageTablet: "/bg-img/monigote-tablet.png",
-    imageMobile: "/bg-img/monigote_mobile.jpg",
-    subtitle: "Spring promo",
-    titleUp: "The Weekend",
-    titleDown: "Promotions",
+    image: "/bg-img/banner_3.png",
+    imageTablet: "/bg-img/banner_3.png",
+    imageMobile: "/bg-img/banner_mobile_3.png",
+    subtitle: "",
+    titleUp: "",
+    titleDown: "",
     rightText: false,
   },
 ];
@@ -77,6 +77,7 @@ const Slideshow = () => {
                   width={1144}
                   height={572}
                   alt={"some name"}
+                  objectFit='cover'
                 />
               </div>
               <div className="hidden sm:block lg:hidden">
@@ -86,6 +87,7 @@ const Slideshow = () => {
                   width={820}
                   height={720}
                   alt={"some name"}
+                  objectFit='cover'
                 />
               </div>
               <div className="sm:hidden">
@@ -95,9 +97,10 @@ const Slideshow = () => {
                   width={428}
                   height={800}
                   alt={"some name"}
+                  objectFit='cover'
                 />
               </div>
-              <div
+              {/* <div
                 className={
                   slider.rightText
                     ? styles.rightTextSection
@@ -114,7 +117,7 @@ const Slideshow = () => {
                   {slider.titleDown}
                 </span>
                 <TextButton value={t("shop_now")} />
-              </div>
+              </div> */}
             </SwiperSlide>
           ))}
         </Swiper>

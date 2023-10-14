@@ -40,24 +40,22 @@ const Card: FC<Props> = ({ item }) => {
             tabIndex={-1}
             onMouseOver={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
+            className="flex relative h-72 w-full items-center justify-center"
           >
             {!isHovered && (
               <Image
                 src={img1 as string}
                 alt={name}
-                width={230}
-                height={300}
-                layout="responsive"
+                layout="fill"
+                className="h-full object-cover relative transform scale-125"
               />
             )}
             {isHovered && (
               <Image
-                className="transition-transform transform hover:scale-110 duration-1000"
                 src={img2 as string}
                 alt={name}
-                width={230}
-                height={300}
-                layout="responsive"
+                layout="fill"
+                className="h-full object-cover relative transform scale-125"
               />
             )}
           </a>
@@ -77,7 +75,7 @@ const Card: FC<Props> = ({ item }) => {
           onClick={() => addOne!(item)}
           className={styles.addBtn}
         >
-          {t("add_to_cart")}
+          Add to cart
         </button>
       </div>
 
@@ -85,13 +83,13 @@ const Card: FC<Props> = ({ item }) => {
         <Link href={itemLink}>
           <a className={styles.itemName}>{name}</a>
         </Link>
-        <div className="text-gray400">$ {price}</div>
+        <div className="text-gray400">Rs {price}</div>
         <button
           type="button"
           onClick={() => addOne!(item)}
           className="uppercase font-bold text-sm sm:hidden"
         >
-          {t("add_to_cart")}
+          Add to cart
         </button>
       </div>
     </div>

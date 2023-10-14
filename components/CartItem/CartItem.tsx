@@ -51,6 +51,7 @@ export default function CartItem() {
   return (
     <>
       <div className="relative">
+        {console.log(cart)}
         <button type="button" onClick={openModal} aria-label="Cart">
           <BagIcon extraClass="h-8 w-8 sm:h-6 sm:w-6" />
           {noOfItems > 0 && (
@@ -106,7 +107,7 @@ export default function CartItem() {
               >
                 <div className="bg-lightgreen flex justify-between items-center p-6">
                   <h3 className="text-xl">
-                    {t("cart")} ({noOfItems})
+                    {"Cart"} ({noOfItems})
                   </h3>
                   <button
                     type="button"
@@ -137,8 +138,8 @@ export default function CartItem() {
                   </div>
                   <div className="btnContainer mt-4 px-4 h-1/3 mb-20 w-full flex flex-col ">
                     <div className="flex justify-between">
-                      <span>{t("subtotal")}</span>
-                      <span>$ {roundDecimal(subtotal)}</span>
+                      <span>Subtotal</span>
+                      <span>Rs {roundDecimal(subtotal)}</span>
                     </div>
                     <LinkButton
                       href="/shopping-cart"
@@ -146,10 +147,10 @@ export default function CartItem() {
                       noBorder={false}
                       inverted={false}
                     >
-                      {t("view_cart")}
+                      View Cart
                     </LinkButton>
                     <Button
-                      value={t("checkout")}
+                      value={"Checkout"}
                       onClick={() => router.push(`/checkout`)}
                       disabled={cart.length < 1 ? true : false}
                       extraClass="text-center"
