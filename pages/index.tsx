@@ -21,7 +21,7 @@ type Props = {
 };
 
 const Home: React.FC<Props> = ({ products }) => {
-  const t = useTranslations("Index");
+  // const t = useTranslations("Index");
   // const [currentItems, setCurrentItems] = useState(products);
   const [isFetching, setIsFetching] = useState(false);
 
@@ -52,7 +52,7 @@ const Home: React.FC<Props> = ({ products }) => {
                 imgAlt="New Arrivals"
               >
                 <LinkButton
-                  href="/product-category/214"
+                  href="/category/214"
                   extraClass="absolute bottom-10-per sm:right-10-per z-20"
                 >
                   214 Collection
@@ -65,7 +65,7 @@ const Home: React.FC<Props> = ({ products }) => {
                 imgAlt="2414"
               >
                 <LinkButton
-                  href="/product-category/214"
+                  href="/category/214"
                   extraClass="absolute bottom-10-per z-20"
                 >
                   2414 Collection
@@ -79,7 +79,7 @@ const Home: React.FC<Props> = ({ products }) => {
                 imgAlt="diamond Collection"
               >
                 <LinkButton
-                  href="/product-category/diamond"
+                  href="/category/diamond"
                   extraClass="absolute bottom-10-per z-20"
                 >
                  Diamond Collection

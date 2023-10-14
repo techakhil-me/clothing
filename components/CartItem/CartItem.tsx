@@ -12,7 +12,7 @@ import { useRouter } from "next/router";
 
 export default function CartItem() {
   const router = useRouter();
-  const t = useTranslations("CartWishlist");
+  // const t = useTranslations("CartWishlist");
   const [open, setOpen] = useState(false);
   const [animate, setAnimate] = useState("");
   const { cart, addOne, removeItem, deleteItem } = useCart();

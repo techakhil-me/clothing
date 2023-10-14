@@ -55,7 +55,7 @@ const Product: React.FC<Props> = () => {
 
 
   const router = useRouter()
-  let id = +router.query.id
+  let id = router?.query?.id ? +router?.query?.id : 1;
 
   const [product, setProduct] = useState(temp);
 
@@ -71,7 +71,7 @@ const Product: React.FC<Props> = () => {
     wishlist.filter((wItem) => wItem.id === product.id).length > 0;
 
   useEffect(() => {
-    let id = +router.query.id
+    let id = router?.query?.id ? +router?.query?.id : 1;
     setProduct(products[id - 1]);
 
   }, [router]);
@@ -231,7 +231,8 @@ const Product: React.FC<Props> = () => {
               color: {color}
             </span>
             <div className="sizeContainer flex space-x-4 text-sm mb-4">
-              {product.colors.map((col,i)=><div
+              {product?.colors?.map((col,i)=><div
+              key={`color-${i}`}
                 onClick={() => handleColor(col)}
                 className={`px-2 h-8 flex items-center justify-center border ${color === col
                     ? "border-gray500"

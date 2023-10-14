@@ -47,7 +47,7 @@ const sliders = [
 ];
 
 const Slideshow = () => {
-  const t = useTranslations("Index");
+  // const t = useTranslations("Index");
 
   return (
     <>

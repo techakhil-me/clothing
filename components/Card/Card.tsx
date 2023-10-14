@@ -15,7 +15,7 @@ type Props = {
 };
 
 const Card: FC<Props> = ({ item }) => {
-  const t = useTranslations("CartWishlist");
+  // const t = useTranslations("CartWishlist");
   const { wishlist, addToWishlist, deleteWishlistItem } = useWishlist();
   const { addOne } = useCart();
   const [isHovered, setIsHovered] = useState(false);

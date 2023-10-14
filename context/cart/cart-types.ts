@@ -34,6 +34,7 @@ export interface itemType extends commonType {
   categoryName?: string;
   size?:string;
   color?:string;
+  colors?: string[];
 }
 
 export interface apiProductsType extends commonType {

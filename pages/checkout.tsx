@@ -33,7 +33,7 @@ type Order = {
 };
 
 const ShoppingCart = () => {
-  const t = useTranslations("CartWishlist");
+  // const t = useTranslations("CartWishlist");
   const { cart, clearCart } = useCart();
   const auth = useAuth();
   const [deli, setDeli] = useState<DeliveryType>("STORE_PICKUP");
@@ -194,7 +194,7 @@ const ShoppingCart = () => {
             <div className="h-full w-full lg:w-7/12 mr-8">
               {errorMsg !== "" && (
                 <span className="text-red text-sm font-semibold">
-                  - {t(errorMsg)}
+                  - {errorMsg}
                 </span>
               )}
               <div className="my-4">
@@ -526,7 +526,7 @@ const ShoppingCart = () => {
                 </div>
 
                 <Button
-                  value={t("place_order")}
+                  value={"Place Order"}
                   size="xl"
                   extraClass={`w-full`}
                   onClick={sendOrder}
@@ -550,14 +550,14 @@ const ShoppingCart = () => {
           </div>
         ) : (
           <div className="app-max-width px-4 sm:px-8 md:px-20 mb-14 mt-6">
-            <div className="text-gray400 text-base">{t("thank_you_note")}</div>
+            <div className="text-gray400 text-base">Thank You</div>
 
             <div className="flex flex-col md:flex-row">
               <div className="h-full w-full md:w-1/2 mt-2 lg:mt-4">
                 <div className="border border-gray500 p-6 divide-y-2 divide-gray200">
                   <div className="flex justify-between">
                     <span className="text-base uppercase mb-3">
-                      {t("order_id")}
+                      Order_ID
                     </span>
                     <span className="text-base uppercase mb-3">
                       {completedOrder.orderNumber}
@@ -566,11 +566,11 @@ const ShoppingCart = () => {
 
                   <div className="pt-2">
                     <div className="flex justify-between mb-2">
-                      <span className="text-base">{t("email_address")}</span>
+                      <span className="text-base">Email Address</span>
                       <span className="text-base">{auth.user?.email}</span>
                     </div>
                     <div className="flex justify-between mb-2">
-                      <span className="text-base">{t("order_date")}</span>
+                      <span className="text-base">Order Date</span>
                       <span className="text-base">
                         {new Date(
                           completedOrder.orderDate
@@ -578,7 +578,7 @@ const ShoppingCart = () => {
                       </span>
                     </div>
                     <div className="flex justify-between mb-2">
-                      <span className="text-base">{t("delivery_date")}</span>
+                      <span className="text-base">Delivery Date</span>
                       <span className="text-base">
                         {new Date(
                           completedOrder.deliveryDate
@@ -589,19 +589,19 @@ const ShoppingCart = () => {
 
                   <div className="py-3">
                     <div className="flex justify-between mb-2">
-                      <span className="">{t("payment_method")}</span>
+                      <span className="">Payment Method</span>
                       <span>{completedOrder.paymentType}</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="">{t("delivery_method")}</span>
+                      <span className="">Delivery Method</span>
                       <span>{completedOrder.deliveryType}</span>
                     </div>
                   </div>
 
                   <div className="pt-2 flex justify-between mb-2">
-                    <span className="text-base uppercase">{t("total")}</span>
+                    <span className="text-base uppercase">Total</span>
                     <span className="text-base">
-                      $ {completedOrder.totalPrice}
+                      Rs {completedOrder.totalPrice}
                     </span>
                   </div>
                 </div>
@@ -609,21 +609,21 @@ const ShoppingCart = () => {
 
               <div className="h-full w-full md:w-1/2 md:ml-8 mt-4 md:mt-2 lg:mt-4">
                 <div>
-                  {t("your_order_received")}
+                  your_order_received
                   {completedOrder.paymentType === "BANK_TRANSFER" &&
-                    t("bank_transfer_note")}
+                    "bank_transfer_note"}
                   {completedOrder.paymentType === "CASH_ON_DELIVERY" &&
                     completedOrder.deliveryType !== "STORE_PICKUP" &&
-                    t("cash_delivery_note")}
+                    "cash_delivery_note"}
                   {completedOrder.deliveryType === "STORE_PICKUP" &&
-                    t("store_pickup_note")}
-                  {t("thank_you_for_purchasing")}
+                    "store_pickup_note"}
+                  {"thank_you_for_purchasing"}
                 </div>
 
                 {completedOrder.paymentType === "BANK_TRANSFER" ? (
                   <div className="mt-6">
                     <h2 className="text-xl font-bold">
-                      {t("our_banking_details")}
+                      {"our_banking_details"}
                     </h2>
                     <span className="uppercase block my-1">Sat Naing :</span>
 
@@ -666,12 +666,12 @@ const ShoppingCart = () => {
   );
 };
 
-export const getStaticProps: GetStaticProps = async ({ locale }) => {
-  return {
-    props: {
-      messages: (await import(`../messages/common/${locale}.json`)).default,
-    },
-  };
-};
+// export const getStaticProps: GetStaticProps = async ({ locale }) => {
+//   return {
+//     props: {
+//       messages: (await import(`../messages/common/${locale}.json`)).default,
+//     },
+//   };
+// };
 
 export default ShoppingCart;

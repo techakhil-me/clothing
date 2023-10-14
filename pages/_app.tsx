@@ -30,7 +30,7 @@ type AppCustomProps = {
 
 const MyApp = ({ Component, pageProps }: AppCustomProps) => {
   return (
-    <NextIntlProvider messages={pageProps?.messages}>
+    // <NextIntlProvider messages={pageProps?.messages} onError={()=>true}>
       <ProvideAuth>
         <ProvideWishlist>
           <ProvideCart>
@@ -38,7 +38,7 @@ const MyApp = ({ Component, pageProps }: AppCustomProps) => {
           </ProvideCart>
         </ProvideWishlist>
       </ProvideAuth>
-    </NextIntlProvider>
+    // </NextIntlProvider>
   );
 };
 

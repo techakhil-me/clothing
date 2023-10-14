@@ -20,7 +20,7 @@ type Props = {
 };
 
 const Header: React.FC<Props> = ({ title }) => {
-  const t = useTranslations("Navigation");
+  // const t = useTranslations("Navigation");
   const { wishlist } = useWishlist();
   const [animate, setAnimate] = useState("");
   const [scrolled, setScrolled] = useState<boolean>(false);
@@ -71,7 +71,7 @@ const Header: React.FC<Props> = ({ title }) => {
         href="#main-content"
         className="whitespace-nowrap absolute z-50 left-4 opacity-90 rounded-md bg-white px-4 py-3 transform -translate-y-40 focus:translate-y-0 transition-all duration-300"
       >
-        {t("skip_to_main_content")}
+        {/* {t("skip_to_main_content")} */}
       </a>
 
       {/* ===== Top Navigation ===== */}
@@ -94,23 +94,23 @@ const Header: React.FC<Props> = ({ title }) => {
             {/* Left Nav */}
             <ul className={`flex-0 lg:flex-1 flex -mt-4 ${styles.leftMenu}`}>
               <li>
-                <Link href={`/product-category/214`}>
+                <Link href={`/category/214`}>
                   <a><img className="h-14" src="/214.png" alt="214" /></a>
                 </Link>
               </li>
               <li>
-              <Link href="/product-category/2414">
+              <Link href="/category/2414">
                   <a><img className="h-14" src="/2414.png" alt="2414" /></a>
                 </Link>
               </li>
 
               <li>
-                <Link href="/product-category/diamond">
+                <Link href="/category/diamond">
                   <a><img className="h-14" src="/diamond.png" alt="diamond" /></a>
                 </Link>
               </li>
               <li>
-                <Link href="/product-category/gold">
+                <Link href="/category/gold">
                   <a><img className="h-14" src="/gold.png" alt="gold" /></a>
                 </Link>
               </li>

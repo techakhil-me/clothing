@@ -18,7 +18,7 @@ import { useWishlist } from "../../context/wishlist/WishlistProvider";
 import { useAuth } from "../../context/AuthContext";
 
 export default function Menu() {
-  const t = useTranslations("Navigation");
+  // const t = useTranslations("Navigation");
   const router = useRouter();
   const { asPath, locale } = router;
   const { wishlist } = useWishlist();
