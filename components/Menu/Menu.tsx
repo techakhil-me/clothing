@@ -122,7 +122,7 @@ export default function Menu() {
                         onChange={handleChange}
                       />
                     </form> */}
-                    <Link href="/product-category/2414">
+                    <Link href="/category/2414">
                       <a
                         className="w-full text-xl hover:bg-gray100 text-left py-2"
                         onClick={closeModal}
@@ -130,7 +130,7 @@ export default function Menu() {
                         2414
                       </a>
                     </Link>
-                    <Link href="/product-category/214">
+                    <Link href="/category/214">
                       <a
                         className="w-full text-xl hover:bg-gray100 text-left py-2"
                         onClick={closeModal}
@@ -138,7 +138,7 @@ export default function Menu() {
                        214
                       </a>
                     </Link>
-                    <Link href="/product-category/diamond">
+                    <Link href="/category/diamond">
                       <a
                         className="w-full text-xl hover:bg-gray100 text-left py-2"
                         onClick={closeModal}
@@ -146,7 +146,7 @@ export default function Menu() {
                        diamond
                       </a>
                     </Link>
-                    <Link href="/product-category/gold">
+                    <Link href="/category/gold">
                       <a
                         className="w-full text-xl hover:bg-gray100 text-left py-2"
                         onClick={closeModal}
