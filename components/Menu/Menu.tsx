@@ -286,15 +286,17 @@ export default function Menu() {
                     </HMenu> */}
 
                     <div className="flex my-10 w-2/5 space-x-6 justify-center">
-                      <a
+                      {/* <a
                         href="#"
                         className="text-gray400 w-10 h-10 py-1 px-auto flex justify-center rounded-md active:bg-gray300"
                         aria-label="Haru Fashion Facebook Page"
                       >
                         <FacebookLogo extraClass="h-8" />
-                      </a>
+                      </a> */}
                       <a
-                        href="#"
+                        href="https://www.instagram.com/dharmik_wear/"
+                        target="_blank"
+                        rel="noreferrer"
                         className="text-gray400 w-10 h-10 py-1 px-auto flex justify-center rounded-md active:bg-gray300"
                         aria-label="Haru Fashion Facebook Page"
                       >
