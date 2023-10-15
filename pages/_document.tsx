@@ -66,7 +66,7 @@ export default function Document() {
       <body>
         <Main />
         <NextScript />
-        <a rel="noreferrer" href="https://wa.me/918097418163?text=I%27m%20interested%20in%20knowing%20more%20about%20dharmik%20wear" target="_blank" className="h-14 w-14 fixed bottom-4 right-4 z-50"><img src="/whatsapp.png" alt="whatsapp"  /></a>
+        <a rel="noreferrer" href="https://wa.me/918080214778?text=I%27m%20interested%20in%20knowing%20more%20about%20dharmik%20wear" target="_blank" className="h-14 w-14 fixed bottom-4 right-4 z-50"><img src="/whatsapp.png" alt="whatsapp"  /></a>
         
       </body>
     </Html>
