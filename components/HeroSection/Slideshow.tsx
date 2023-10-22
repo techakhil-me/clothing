@@ -57,7 +57,7 @@ const Slideshow = () => {
           spaceBetween={0}
           loop={true}
           autoplay={{
-            delay: 5000,
+            delay: 6000,
             disableOnInteraction: false,
           }}
           navigation={true}
@@ -68,6 +68,12 @@ const Slideshow = () => {
           }}
           className="mySwiper"
         >
+          <SwiperSlide>
+          <video className="w-full object-cover max-h-screen" controls={false} autoPlay={true} loop muted={true}>
+      <source src="/all.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+          </SwiperSlide>
           {sliders.map((slider) => (
             <SwiperSlide key={slider.id}>
               <div className="hidden lg:block">

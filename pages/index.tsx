@@ -105,6 +105,15 @@ const Home: React.FC<Props> = ({ products }) => {
           </div>
         </section>
 
+
+        <section className="app-max-width w-full h-full flex flex-col justify-center mt-16 mb-20">
+        <video className="w-full object-cover max-h-screen transform scale-105 overflow-hidden" controls={false} autoPlay={true} loop muted={true}>
+      <source src="/reel_2.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+          </section>
+
+
         {/* ===== Testimonial Section ===== */}
         {/* <section className="w-full hidden h-full py-16 md:flex flex-col items-center bg-lightgreen">
           <h2 className="text-3xl">Testimonial</h2>
