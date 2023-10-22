@@ -289,7 +289,7 @@ export default function Menu() {
                       {/* <a
                         href="#"
                         className="text-gray400 w-10 h-10 py-1 px-auto flex justify-center rounded-md active:bg-gray300"
-                        aria-label="Haru Fashion Facebook Page"
+                        aria-label="Dharmik wear Facebook Page"
                       >
                         <FacebookLogo extraClass="h-8" />
                       </a> */}
@@ -298,7 +298,7 @@ export default function Menu() {
                         target="_blank"
                         rel="noreferrer"
                         className="text-gray400 w-10 h-10 py-1 px-auto flex justify-center rounded-md active:bg-gray300"
-                        aria-label="Haru Fashion Facebook Page"
+                        aria-label="Dharmik wear Facebook Page"
                       >
                         <InstagramLogo extraClass="h-8" />
                       </a>

@@ -139,7 +139,7 @@ export default function Footer() {
             </span>{" "}
             {/* <a
               href="www.facebook.com"
-              aria-label="Facebook Page for Haru Fashion"
+              aria-label="Facebook Page for Dharmik wear"
             >
               <FacebookLogo />
             </a> */}
@@ -147,7 +147,7 @@ export default function Footer() {
              href="https://www.instagram.com/dharmik_wear/"
              target="_blank"
              rel="noreferrer"
-              aria-label="Instagram Account for Haru Fashion"
+              aria-label="Instagram Account for Dharmik wear"
             >
               <InstagramLogo />
             </a>
