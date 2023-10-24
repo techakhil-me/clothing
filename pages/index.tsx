@@ -65,7 +65,7 @@ const Home: React.FC<Props> = ({ products }) => {
                 imgAlt="2414"
               >
                 <LinkButton
-                  href="/category/214"
+                  href="/category/2414"
                   extraClass="absolute bottom-10-per z-20"
                 >
                   2414 Collection
