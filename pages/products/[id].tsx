@@ -350,8 +350,16 @@ const Product: React.FC<Props> = () => {
             </Disclosure>
             <div className="flex items-center space-x-4 mt-4">
               <span>share</span>
-              <FacebookLogo extraClass="h-4 cursor-pointer text-gray400 hover:text-gray500" />
-              <InstagramLogo extraClass="h-4 cursor-pointer text-gray400 hover:text-gray500" />
+                <a
+                        href="https://www.instagram.com/dharmik_wear/"
+                        target="_blank"
+                        rel="noreferrer"
+                        aria-label="Dharmik wear Instagram Page"
+                      >
+                        <InstagramLogo extraClass="h-4 cursor-pointer text-gray400 hover:text-gray500"  />
+                      </a>
+              
+                        
             </div>
           </div>
         </div>

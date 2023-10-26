@@ -19,23 +19,23 @@ export default function Document() {
         <meta content="#282828" name="msapplication-TileColor" />
 
         <link
-          href="/favicons/icon.png"
+          href="/icon.png"
           rel="apple-touch-icon"
           sizes="180x180"
         />
         <link
-          href="/favicons/icon.png"
+          href="/icon.png"
           rel="icon"
           sizes="32x32"
           type="image/png"
         />
         <link
-          href="/favicons/icon.png"
+          href="/icon.png"
           rel="icon"
           sizes="16x16"
           type="image/png"
         />
-        <link href="/favicons/icon.png" rel="shortcut icon" />
+        <link href="/icon.png" rel="shortcut icon" />
         <link href="/favicons/site.webmanifest" rel="manifest" />
 
         <meta property="og:url" content="https://www.dharmikwear.com/" />

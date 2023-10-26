@@ -98,10 +98,10 @@ const Home: React.FC<Props> = ({ products }) => {
             </div>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-x-4 lg:gap-x-12 gap-y-6 mb-10 app-x-padding">
-          <Card key={currentItems[1-1].id} item={currentItems[1-1]} />
-          <Card key={currentItems[4-1].id} item={currentItems[4-1]} />
-          <Card key={currentItems[9-1].id} item={currentItems[9-1]} />
-          <Card key={currentItems[10-1].id} item={currentItems[10-1]} />
+          <Card key={currentItems[1-1].id} item={currentItems[1-1]} colcase={false} />
+          <Card key={currentItems[4-1].id} item={currentItems[4-1]} colcase={true} />
+          <Card key={currentItems[9-1].id} item={currentItems[9-1]} colcase={false} />
+          <Card key={currentItems[10-1].id} item={currentItems[10-1]} colcase={true} />
           </div>
         </section>
 
@@ -126,8 +126,8 @@ const Home: React.FC<Props> = ({ products }) => {
             <h2 className="text-3xl">Dharmik Wear Collections</h2>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-x-4 gap-y-10 sm:gap-y-6 mb-10">
-            {currentItems.map((item) => (
-              <Card key={item.id} item={item} />
+            {currentItems.map((item,i) => (
+              <Card key={item.id} item={item} colcase={i%2? true:false}/>
             ))}
           </div>
           {/* <div className="flex justify-center">
@@ -150,7 +150,18 @@ const Home: React.FC<Props> = ({ products }) => {
             <Image src={ourShop} alt="Our Shop" />
           </div>
         </section> */}
+
+
+
+<section className="app-max-width w-full overflow-hidden h-full flex flex-col justify-center mt-16 mb-20">
+        <video className="w-full h-screen md:h-full object-cover max-h-screen transform scale-105 overflow-hidden" controls={false} autoPlay={true} loop muted={true}>
+      <source src="/reel_2.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+          </section>
       </main>
+
+
 
       {/* ===== Footer Section ===== */}
       <Footer />

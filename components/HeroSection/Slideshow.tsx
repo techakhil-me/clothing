@@ -68,13 +68,7 @@ const Slideshow = () => {
           }}
           className="mySwiper"
         >
-          <SwiperSlide>
-
-          <video className="md:w-full object-cover w-full h-screen md:h-full max-h-screen" controls={false} autoPlay={true} loop muted={true}>
-      <source src="/reel_2.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
-    </video>
-          </SwiperSlide>
+        
           {sliders.map((slider) => (
             <SwiperSlide key={slider.id}>
               <div className="hidden lg:block">

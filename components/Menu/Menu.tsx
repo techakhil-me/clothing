@@ -127,7 +127,7 @@ export default function Menu() {
                         className="w-full text-xl hover:bg-gray100 text-left py-2"
                         onClick={closeModal}
                       >
-                        2414
+                         <img className="h-14" src="/2414.png" alt="2414" />
                       </a>
                     </Link>
                     <Link href="/category/214">
@@ -135,7 +135,7 @@ export default function Menu() {
                         className="w-full text-xl hover:bg-gray100 text-left py-2"
                         onClick={closeModal}
                       >
-                       214
+                       <img className="h-14" src="/214.png" alt="214" />
                       </a>
                     </Link>
                     <Link href="/category/diamond">
@@ -143,7 +143,7 @@ export default function Menu() {
                         className="w-full text-xl hover:bg-gray100 text-left py-2"
                         onClick={closeModal}
                       >
-                       diamond
+                        <img className="h-14" src="/diamond.png" alt="diamond" />
                       </a>
                     </Link>
                     <Link href="/category/gold">
@@ -151,7 +151,7 @@ export default function Menu() {
                         className="w-full text-xl hover:bg-gray100 text-left py-2"
                         onClick={closeModal}
                       >
-                        gold
+                         <img className="h-14" src="/gold.png" alt="gold" />
                       </a>
                     </Link>
                     {/* <Link href="/about">

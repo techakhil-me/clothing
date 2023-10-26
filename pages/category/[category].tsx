@@ -30,8 +30,20 @@ const ProductCategory: React.FC<Props> = () => {
   // const lastPage = Math.ceil(numberOfProducts / 10);
   let temp = items.filter((item) => item.categoryName === category);
   let item = temp;
-  
-  
+
+
+  const cat_title: {
+    214: string,
+    2414: string,
+    gold: string,
+    diamond: string,
+  } = {
+    214: "/214.png",
+    2414: "/2414.png",
+    gold: "/gold.png",
+    diamond: "/diamond.png",
+  }
+
   return (
     <div>
       {/* ===== Head Section ===== */}
@@ -44,15 +56,15 @@ const ProductCategory: React.FC<Props> = () => {
             <div className="breadcrumb">
               <Link href="/">
                 <a className="text-gray400">Home</a>
-              </Link>{" "}
-               <span className="capitalize">{category as string}</span>
+              </Link>{" / "}
+              <span className="capitalize">{category as string}</span>
             </div>
           </div>
         </div>
 
         {/* ===== Heading & Filter Section ===== */}
         <div className="app-x-padding app-max-width w-full mt-8">
-          <h3 className="text-4xl mb-2 capitalize">{category as string}</h3>
+          <h3 className="text-4xl mb-2 capitalize"><img src={cat_title[category as keyof typeof cat_title]} alt={category as string} /></h3>
           {/* <div className="flex flex-col-reverse sm:flex-row gap-4 sm:gap-0 justify-between mt-4 sm:mt-6">
             {category !== "new-arrivals" && <SortMenu orderby={orderby} />}
           </div> */}

@@ -79,7 +79,7 @@ const Header: React.FC<Props> = ({ title }) => {
 
       {/* ===== Main Navigation ===== */}
       <nav
-        className={`${scrolled ? "bg-white sticky top-0 shadow-md z-50" : "bg-transparent"
+        className={`${true ? "bg-white  top-0 shadow-md z-50" : "bg-transparent"
           } w-full z-50 h-20 relative`}
       >
         <div className="app-max-width w-full">
@@ -119,15 +119,14 @@ const Header: React.FC<Props> = ({ title }) => {
 
             {/* Dharmik Logo */}
             <div className="flex-1 flex justify-center items-center cursor-pointer">
-              <div className="w-32 h-auto">
+              <div className="w-24 h-auto">
                 <Link href="/">
                   <a>
                     <Image
-                      className="justify-center"
                       src="/logo.png"
                       alt="Picture of the author"
-                      width={40}
-                      height={40}
+                      width={24}
+                      height={24}
                       layout="responsive"
                     />
                   </a>
