@@ -107,7 +107,7 @@ const Home: React.FC<Props> = ({ products }) => {
 
 
         <section className="app-max-width w-full overflow-hidden h-full flex flex-col justify-center mt-16 mb-20">
-        <video className="w-full h-screen md:h-full object-cover max-h-screen transform scale-105 overflow-hidden" controls={false} autoPlay={true} loop muted={true}>
+        <video className="w-full md:h-full object-cover max-h-screen transform scale-105 overflow-hidden" controls={false} autoPlay={true} loop muted={true}>
       <source src="/all.mp4" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
@@ -154,7 +154,7 @@ const Home: React.FC<Props> = ({ products }) => {
 
 
 <section className="app-max-width w-full overflow-hidden h-full flex flex-col justify-center mt-16 mb-20">
-        <video className="w-full h-screen md:h-full object-cover max-h-screen transform scale-105 overflow-hidden" controls={false} autoPlay={true} loop muted={true}>
+        <video className="w-full md:h-full object-cover max-h-screen transform scale-105 overflow-hidden" controls={false} autoPlay={true} loop muted={true}>
       <source src="/reel_2.mp4" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
