@@ -120,7 +120,7 @@ const ShoppingCart = () => {
       total += qty * item.price
       orders += `${item.name}%20${item.size}%20${item.color}%20${item.price}%20x${item.qty}%20%3D%20Rs${qty * item.price}%0A%0A`
     })
-    let text = `JAI%20SHREE%20Krishna%0ADHARMIK%20WEAR%20PVT%20LTD%20%F0%9F%99%8C%0A---------------------------------------------%0AI%20want%20to%20purchase%20following%20item%20kindly%20share%20payment%20details.%0A0A%0A${orders}%0A%0ATOTAL%20AMOUNT%3A-%20Rs${total}%0A%0AKINDLY%20SHARE%20PAYMENT%20DETAILS%0A%0AMY%20ADDRESS%2F%20DETAILS%3A-%0A-------------------------------------------%0Aname%3A%20${name}%0Aemail%3A%20${email}%0Aphone%3A%20%2B${phone}%0Aaddress%3A%20${address}%0A%0AIt%20is%20%20amazing%20experience%20for%20me%20to%20shop%20at%C2%A0dharmikwear.com%20`
+    let text = `JAI%20SHREE%20KRISHNA%0ADHARMIK%20WEAR%20PVT%20LTD%20%F0%9F%99%8C%0A---------------------------------------------%0AI%20want%20to%20purchase%20following%20item%20kindly%20share%20payment%20details.%0A0A%0A${orders}%0A%0ATOTAL%20AMOUNT%3A-%20Rs${total}%0A%0AKINDLY%20SHARE%20PAYMENT%20DETAILS%0A%0AMY%20ADDRESS%2F%20DETAILS%3A-%0A-------------------------------------------%0Aname%3A%20${name}%0Aemail%3A%20${email}%0Aphone%3A%20%2B${phone}%0Aaddress%3A%20${address}%0A%0AIt%20is%20%20amazing%20experience%20for%20me%20to%20shop%20at%C2%A0dharmikwear.com%20`
     const newWindow = window.open(`https://wa.me/918080214778?text=${text}`, '_blank', 'noopener,noreferrer')
 
   }
