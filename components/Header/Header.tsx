@@ -79,7 +79,7 @@ const Header: React.FC<Props> = ({ title }) => {
 
       {/* ===== Main Navigation ===== */}
       <nav
-        className={`${true ? "bg-white  top-0 shadow-md z-50" : "bg-transparent"
+        className={`${true ? "bg-[#f5db2a]  top-0 shadow-md z-50" : "bg-transparent"
           } w-full z-50 h-20 relative`}
       >
         <div className="app-max-width w-full">
